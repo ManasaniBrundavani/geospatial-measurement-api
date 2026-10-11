@@ -1,29 +1,26 @@
-# Virtual environment
-venv/
 
 # Python
 __pycache__/
 *.py[cod]
+*.egg-info/
 .pytest_cache/
 
-# Environment variables
-.env
+# Virtual environments
+venv/
+.venv/
+env/
 
-# IDE
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and operating system files
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db
 
-# Temporary files
-tmp/
-temp/
-
-# Coverage
-.coverage
-htmlcov/
-
-# Uploaded files
-uploads/
+# Generated files
+dist/
+build/
